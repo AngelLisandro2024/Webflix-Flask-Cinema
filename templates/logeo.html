@@ -1,0 +1,45 @@
+{% extends "./base.html" %}
+
+{% block titulo %} Pagina Inicio de seccion {% endblock %}
+
+{% block contenidobase %}
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <a id="barratitulo" class="navbar-brand" href="#">WEBFLIX</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="navbar-brand" aria-current="page" href="/principal">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="navbar-brand" href="#">Peliculas</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              
+            </form>
+          </div>
+        </div>
+      </nav>
+      <br><br><br><br><br><br>
+    <div class="iniciar">
+        <h2>
+            Inicia seccion o registrate
+        </h2>
+        <form action="/submit" method="post" class="formulariosregistro">
+            <label for="nombre">Usuario</label><br>
+            <input type="text" id="nombre" name="nombre" required><br>
+            <form action="/submit" method="post" class="formulariosregistro">
+            <label for="nombre">Contraseña:</label><br>
+            <input type="password" id="Contraseña" name="Contraseña" required><br><br>
+            <button type="button" class="btn btn-success">Acceder</button><br><br>
+        <h4>Si no te has registrado anda de una vez y <br> registrate con el siguiente link</h4>
+        <button type="button" class="btn btn-danger">Registrarse</button> <br><br>
+        <button type="button" class="btn btn-warning">¿Olvidaste tu contraseña?</button>
+    </div>
+</div>
+{% endblock %}

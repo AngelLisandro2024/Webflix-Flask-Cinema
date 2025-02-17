@@ -1,0 +1,142 @@
+{% extends "./base.html" %}
+
+{% block titulo %} Pagina de Peliculas {% endblock %}
+
+{% block contenidobase %}
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <a id="barratitulo" class="navbar-brand" href="#">WEBFLIX</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="navbar-brand" aria-current="page" href="/principal">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="navbar-brand" href="#">Peliculas</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <a class="btn btn-primary" href="/logeo">Iniciar seccion</a>
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav> <br><br><br>
+    <h1 id="Titulo" >
+       Pagina de peliculas
+    </h1>
+</header>
+<section id="primeraSeccion">
+    <div>
+        <h1>Aqui van unos betas</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti accusamus maiores id consequuntur, assumenda laborum dolorum commodi aliquid at eaque earum iure architecto voluptatibus sit magnam fugiat placeat numquam neque?</p>
+    </div>
+</section>
+<section id="Secciones">
+    <div class="card">
+        <h2>
+            Titulo de mi post
+        </h2>
+        <p>Descripcion de mi post</p>
+        <img src= "{{ url_for('static', filename='img/1.jpg') }}"/>
+        <p>Aqui en este parrafo va a ir todo el texto que va a estar en mi mega post !!!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam eos ipsam maiores a, aspernatur et modi. Hic voluptates, iste qui architecto officiis atque ipsam sed mollitia nihil nulla reiciendis minus!</p>
+        <a href="#" class="btn btn-primary">Ir a pelicula</a>
+    </div>
+    <div class="card">
+        <h2>
+            Titulo de mi post 2
+        </h2>
+        <p>Descripcion de mi post 2</p>
+        <img src= "{{ url_for('static', filename='img/2.jpg') }}"/>
+        <p>Aqui en este parrafo va a ir todo el texto que va a estar en mi mega post !!!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam eos ipsam maiores a, aspernatur et modi. Hic voluptates, iste qui architecto officiis atque ipsam sed mollitia nihil nulla reiciendis minus!</p>
+        <a href="#" class="btn btn-primary">Ir a pelicula</a>
+    </div>
+    <div class="card">
+        <h2>
+            Titulo de mi post 3
+        </h2>
+        <p>Descripcion de mi post 3</p>
+        <img src= "{{ url_for('static', filename='img/8.jpg') }}"/>
+        <p>Aqui en este parrafo va a ir todo el texto que va a estar en mi mega post !!!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam vel cumque debitis nihil modi expedita dolor cupiditate ea cum autem, ut ipsum maxime fugit quas repellendus temporibus dolorem earum unde?</p>
+        <a href="#" class="btn btn-primary">Ir a pelicula</a>
+    </div>
+</section>
+<section id="Secciones">
+    <div class="card">
+        <h2>
+            Titulo de mi post 3
+        </h2>
+        <p>Descripcion de mi post 3</p>
+        <img src= "{{ url_for('static', filename='img/6.jpg') }}"/>
+        <p>Aqui en este parrafo va a ir todo el texto que va a estar en mi mega post !!!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam vel cumque debitis nihil modi expedita dolor cupiditate ea cum autem, ut ipsum maxime fugit quas repellendus temporibus dolorem earum unde?</p>
+        <a href="#" class="btn btn-primary">Ir a pelicula</a>
+    </div>
+    <div class="card">
+        <h2>
+            Titulo de mi post 3
+        </h2>
+        <p>Descripcion de mi post 3</p>
+        <img src= "{{ url_for('static', filename='img/5.jpg') }}"/>
+        <p>Aqui en este parrafo va a ir todo el texto que va a estar en mi mega post !!!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam vel cumque debitis nihil modi expedita dolor cupiditate ea cum autem, ut ipsum maxime fugit quas repellendus temporibus dolorem earum unde?</p>
+        <a href="#" class="btn btn-primary">Ir a pelicula</a>
+    </div>
+    <div class="card">
+        <h2>
+            Titulo de mi post 3
+        </h2>
+        <p>Descripcion de mi post 3</p>
+        <img src= "{{ url_for('static', filename='img/4.jpg') }}"/>
+        <p>Aqui en este parrafo va a ir todo el texto que va a estar en mi mega post !!!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam vel cumque debitis nihil modi expedita dolor cupiditate ea cum autem, ut ipsum maxime fugit quas repellendus temporibus dolorem earum unde?</p>
+        <a href="#" class="btn btn-primary">Ir a pelicula</a>
+    </div>
+</section>
+<section id="Secciones">
+    <div class="card">
+        <h2>
+            Titulo de mi post 3
+        </h2>
+        <p>Descripcion de mi post 3</p>
+        <img src= "{{ url_for('static', filename='img/6.jpg') }}"/>
+        <p>Aqui en este parrafo va a ir todo el texto que va a estar en mi mega post !!!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam vel cumque debitis nihil modi expedita dolor cupiditate ea cum autem, ut ipsum maxime fugit quas repellendus temporibus dolorem earum unde?</p>
+        <a href="#" class="btn btn-primary">Ir a pelicula</a>
+    </div>
+    <div class="card">
+        <h2>
+            Titulo de mi post 3
+        </h2>
+        <p>Descripcion de mi post 3</p>
+        <img src= "{{ url_for('static', filename='img/7.jpg') }}"/>
+        <p>Aqui en este parrafo va a ir todo el texto que va a estar en mi mega post !!!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam vel cumque debitis nihil modi expedita dolor cupiditate ea cum autem, ut ipsum maxime fugit quas repellendus temporibus dolorem earum unde?</p>
+        <a href="#" class="btn btn-primary">Ir a pelicula</a>
+    </div>
+    <div class="card">
+        <h2>
+            Titulo de mi post 3
+        </h2>
+        <p>Descripcion de mi post 3</p>
+        <img src= "{{ url_for('static', filename='img/4.jpg') }}"/>
+        <p>Aqui en este parrafo va a ir todo el texto que va a estar en mi mega post !!!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam vel cumque debitis nihil modi expedita dolor cupiditate ea cum autem, ut ipsum maxime fugit quas repellendus temporibus dolorem earum unde?</p>
+        <a href="#" class="btn btn-primary">Ir a pelicula</a>
+    </div>
+</section>
+<footer>
+    <a href="#Titulo">Ir al comienzo</a>
+    <br>
+    <a href="mailto:angelfernandez12v@gmail.com">Correo electronico</a>
+    <p>Copyright 2024</p>
+</footer>
+{% endblock %}

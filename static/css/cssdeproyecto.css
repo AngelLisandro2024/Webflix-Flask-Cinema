@@ -1,0 +1,78 @@
+h2 {
+    text-align: center;
+    color:rgb(19, 5, 5);
+}
+p {
+    text-align: center;
+    color: rgb(13, 31, 24);
+}
+
+body{
+    margin: 0;
+    background-color:beige;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header {
+    background-color: #364552;
+    color: white;
+    padding: 3rem 2rem;
+}
+#primeraSeccion {
+    background-color: #7d7b7b;
+    padding: 60px;
+    color: aqua;
+    text-align: center;
+}
+header h1 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+#Secciones{
+    background-color: #ff7373;
+        display: flex;
+        gap: 20px;
+    margin: 30px;
+    border-style:solid;
+    border-color: #7d7b7b;
+    border-width: 5px;
+    border-radius: 5px;
+    
+}
+.post{
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 20px;
+    padding: 5px;
+    cursor: pointer;
+}
+.post img {
+    margin: 12%;
+    text-align: center;
+    width: 70%;
+}
+
+footer {
+    background-color: #222;
+    padding: 3rem;
+    color: white;
+}
+
+footer section {
+    float: left;
+}
+footer p {
+    margin: 0;
+    float: right;
+}
+footer a {
+    transition: color 0.3s ease;
+    color: white;
+    text-decoration: none;
+}
+footer a:hover {
+    color: cornflowerblue
+}
+footer p {
+    color: white;
+}
